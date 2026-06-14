@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="Tic_tac_toe.css"/>
+</head>
+<body>
+  <div class="ttt-wrap">
+    <div class="ttt-header">
+      <div class="ttt-title">Tic Tac Toe</div>
+      <div class="ttt-subtitle">Classic Grid, Fresh Energy</div>
+      <div class="ttt-status" id="status">X's turn</div>
+      <div class="mode-switch" role="group" aria-label="Game mode">
+        <button class="mode-btn active" id="singleBtn" type="button">Single Player</button>
+        <button class="mode-btn" id="multiBtn" type="button">Multiplayer</button>
+      </div>
+      <div class="difficulty-wrap" id="difficultyWrap">
+        <div class="difficulty-title">AI Difficulty</div>
+        <div class="difficulty-grid">
+          <button class="difficulty-btn" data-diff="easy" type="button">Easy</button>
+          <button class="difficulty-btn active" data-diff="normal" type="button">Normal</button>
+          <button class="difficulty-btn" data-diff="hard" type="button">Hard</bu3tton>
+        </div>
+      </div>
+    </div>
+
+    <div class="ttt-board" id="board">
+      <div class="ttt-cell" data-i="0"><span class="mark" id="m0"></span></div>
+      <div class="ttt-cell" data-i="1"><span class="mark" id="m1"></span></div>
+      <div class="ttt-cell" data-i="2"><span class="mark" id="m2"></span></div>
+      <div class="ttt-cell" data-i="3"><span class="mark" id="m3"></span></div>
+      <div class="ttt-cell" data-i="4"><span class="mark" id="m4"></span></div>
+      <div class="ttt-cell" data-i="5"><span class="mark" id="m5"></span></div>
+      <div class="ttt-cell" data-i="6"><span class="mark" id="m6"></span></div>
+      <div class="ttt-cell" data-i="7"><span class="mark" id="m7"></span></div>
+      <div class="ttt-cell" data-i="8"><span class="mark" id="m8"></span></div>
+    </div>
+
+    <div class="ttt-score">
+      <div class="score-box x-box">
+        <div class="score-label" id="labelX">You (X)</div>
+        <div class="score-val" id="sx">0</div>
+      </div>
+      <div class="score-sep">vs</div>
+      <div class="score-box o-box">
+        <div class="score-label" id="labelO">CPU (O)</div>
+        <div class="score-val" id="so">0</div>
+      </div>
+    </div>
+
+    <div class="ttt-footer">
+      <button class="ttt-btn primary" id="newRoundBtn" type="button">New Round</button>
+      <button class="ttt-btn" id="resetScoresBtn" type="button">Reset Scores</button>
+    </div>
+  </div>
+
+    <script src="Tic_tac_toe.js"></script>
+</body>
+</html>
